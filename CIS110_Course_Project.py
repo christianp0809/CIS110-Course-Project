@@ -66,9 +66,9 @@ print("boots, for fear of what", heroName, "will do to them. Many still choose t
 print("their aim at", heroName + ". They are quickly dispatched by", heroName + ", and everyone")
 print("begins to cheer for their favorite superhero.")
 
-print("\nAfter taking down", villainName + "’s henchmen, heroName pauses to show praise")
+print("\nAfter taking down", villainName + "’s henchmen,", heroName, "pauses to show praise")
 print("for the crowd. As everyone continues to celebrate yet another victory for") 
-print(heroName, "suddenly there is a loud scream.", villainName,"is back up, and they")
+print(heroName + ", suddenly there is a loud scream.", villainName,"is back up, and they")
 print("want vengeance.", heroName," really struggles now with",villainName, "now that they")
 print("no longer have the surprise. Many make a quick dash away as the battle becomes")
 print("really heated, and you wonder whether", heroName, "will be able to beat", villainName, "this time.")
@@ -85,7 +85,7 @@ if helpHero.lower() == "yes":
     print("comes from behind and takes out", villainName, "once and for all.")
 else:
     print("\nYou decide to flee the scene before anything ends up happening to you.")
-    print("after all, you are just and ordinary citizen, and you can't do much") 
+    print("after all, you are just an ordinary citizen, and you can't do much") 
     print("compared to the likes of", heroName + ". You decide to make your escape")
     print("through the concession stands, spilling", favSoda, "all over the ground.")
     print("You manage to escape and arrive at home. You turn on the news to hear what")
@@ -107,5 +107,5 @@ else:
     print("\nAfter the attack at the concert by ", villainName + ", you are grateful")
     print("for heroes like", heroName + ". You decide to enjoy the rest of the concert")
     print("at home, where it's safe. You have had enough adventure for a lifetime")
-    print("and feel it is best to stick to place you know.")
+    print("and feel it is best to stick to places you know.")
 
