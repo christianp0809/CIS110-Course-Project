@@ -12,24 +12,39 @@ while keepGoing.lower() == "yes":
     while newValues.lower() == "no":
 
         heroName = input("\nWho is your favorite superhero:  ")
-        while (len(heroName) == 0):
-            heroName = input("Hero cannot be blank. Please enter your favorite hero:  ")
+        while (len(heroName) == 0) or (len(heroName) >= 16):
+            if (len(heroName) == 0):
+                heroName = input("Hero cannot be blank. Please enter your favorite hero:  ")
+            else:
+                heroName = input("Answer is too long. Please keep answer under 16 characters:  ")
         villainName = input("\nWho is your favorite supervillain:  ")
-        while (len(villainName) == 0):
-            villainName = input("Villain cannot be blank. Please enter your favorite villain:  ")
+        while (len(villainName) == 0) or (len(villainName) >= 16):
+            if (len(villainName) == 0):
+                villainName = input("Villain cannot be blank. Please enter your favorite villain:  ")
+            else:
+                villainName = input("Answer is too long. Please keep answer under 16 characters:  ")
         lastBand = input("\nWhat was the last band you listened to:  ")
-        while (len(lastBand) == 0):
-            lastBand = input("Band cannot be blank. Please enter the last band you have listened to:  ")
+        while (len(lastBand) == 0) or (len(lastBand) >= 16):
+            if (len(lastBand) == 0):
+                lastBand = input("Band cannot be blank. Please enter the last band you have listened to:  ")
+            else:
+                lastBand = input("Answer is too long. Please keep answer under 16 characters:  ")
         storeName = input("\nWhat is the closest store to you:  ")
-        while (len(storeName) == 0):
-            storeName = input("Store cannot be blank. Please enter the closest store to you:  ")
+        while (len(storeName) == 0) or (len(storeName) >= 16):
+            if (len(storeName) == 0):
+                storeName = input("Store cannot be blank. Please enter the closest store to you:  ")
+            else:
+                storeName = input("Answer is too long. Please keep answer under 16 characters:  ")
         favNum = input("\nWhat is your favorite number:  ")
         while not favNum.isdigit():
             favNum = input("Value not recognized. Please enter a numeric value:  ")
         favNum = int(favNum)
         favSoda = input("\nWhat is your favorite soda:  ")
-        while (len(favSoda) == 0):
-            favSoda = input("Soda cannot be blank. Please enter your favorite soda:  ")
+        while (len(favSoda) == 0) or (len(favSoda) >= 16):
+            if (len(favSoda) == 0):
+                favSoda = input("Soda cannot be blank. Please enter your favorite soda:  ")
+            else:
+                favSoda = input("Answer is too long. Please keep answer under 16 characters:  ")
         newValues = input("\nDo you like your answers? Type yes to continue, or no to change your answers:  ")
         while newValues.lower() != "yes" and newValues.lower() != "no":
             newValues = input("Invalid value. Please enter yes or no:  ")
