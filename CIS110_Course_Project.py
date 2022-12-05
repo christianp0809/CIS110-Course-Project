@@ -86,17 +86,43 @@ while keepGoing.lower() == "yes":
 
             print("\nYou wonder what could be so important with that amount of time,")
             print("and then it suddenly dawns on you: They are planning on attacking")
-            print("the concert! You hurry over to the concert, desperate to warn anyone")
-            print("and everyone about the danger. Most just laugh, believing it was")
-            print("just another person pulling a prank.")
+            print("the concert! You know you need to warn someone, but you are also") 
+            print("afraid of being caught. You see some of the henchman heading your way,")
+            print("and you need to act fast!")
+
+            hideSeek = input("\nDo you try to hide? Enter yes or no:  ")
+            countDown = 0
+            while hideSeek.lower() != "yes" and hideSeek.lower() != "no":
+                hideSeek = input("Invalid value. Please enter yes or no:  ")
+            while hideSeek.lower() == "yes":
+                favNum = favNum - 1
+                print("\nYou continue to hide behind the boxes, and the henchmen don't seem to notice you.")
+                print("You see an opporutinity to escape, though it still seems risky with the guards nearby.")
+                print("However, you now only have", favNum, "of minutes until", villainName, "attacks the concert.")
+                if favNum <= 1:
+                    break
+                else:
+                    hideSeek = input("\nDo you continue to hide? Enter yes or no:  ")
+                    while hideSeek.lower() != "yes" and hideSeek.lower() != "no":
+                        hideSeek = input("Invalid value. Please enter yes or no:  ")
+            
+            print("\nYou decide you cannot wait any longer and make a break for the exit.")
+            print("and the henchmen seem surprised to seeyou jump out from the crates. Before")
+            print("they even have a chance to react, you are already out the door and half")
+            print("way down the block. You hurry over to the concert, desperate to warn anyone")
+            print("and everyone about the danger. Most just laugh, believing you are just")
+            print("pulling a prank.")
         else:
             print("\nYou decide it must be a demolition crew working on tearing down the old building.")
             print("You don't think anything more of it, as you realize you only have",favNum, "minutes")
             print("left before the concert starts.")
     
-            print("\nYou arrive just in time for", lastBand + "'s performance. Everyone is having an amazing time,")
-            print("and you grab a", favSoda, "from one of the concession stands. You feel that nothing could be more")
-            print("exciting than this!")
+            print("\nYou arrive just in time for", lastBand + "'s performance. Everyone is having an amazing time.")
+            print("There are many concession stands, surrounding the perimeter. There are many options available,")
+            print("but you also don't want to miss out on listening to ", lastBand + ".")
+            watchBand = input("\nDo you go ahead and watch the band?")
+            print("\nYou grab a can of", favSoda, "from one of the concession stands. It has been a while since you")
+            print("have last had one, and you decide it is a good chance to get one to celebrate.")
 
         print("\nSuddenly there was a loud explosion! Everyone starts to panic,")
         print("as they suddenly see armed men surround them. Through the dust and")
