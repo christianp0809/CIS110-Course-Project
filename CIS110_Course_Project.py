@@ -12,17 +12,17 @@ while keepGoing.lower() == "yes":
     while newValues.lower() == "no":
 
         heroName = input("\nWho is your favorite superhero:  ")
-        while (len(heroName) == 0) or (len(heroName) >= 16):
+        while (len(heroName) == 0) or (len(heroName) >= 24):
             if (len(heroName) == 0):
                 heroName = input("Hero cannot be blank. Please enter your favorite hero:  ")
             else:
-                heroName = input("Answer is too long. Please keep answer under 16 characters:  ")
+                heroName = input("Answer is too long. Please keep answer under 24 characters:  ")
         villainName = input("\nWho is your favorite supervillain:  ")
-        while (len(villainName) == 0) or (len(villainName) >= 16):
+        while (len(villainName) == 0) or (len(villainName) >= 24):
             if (len(villainName) == 0):
                 villainName = input("Villain cannot be blank. Please enter your favorite villain:  ")
             else:
-                villainName = input("Answer is too long. Please keep answer under 16 characters:  ")
+                villainName = input("Answer is too long. Please keep answer under 24 characters:  ")
         lastBand = input("\nWhat was the last band you listened to:  ")
         while (len(lastBand) == 0) or (len(lastBand) >= 16):
             if (len(lastBand) == 0):
@@ -85,7 +85,7 @@ while keepGoing.lower() == "yes":
             print('only', favNum, 'minutes left, so hurry up!”')
 
             print("\nYou wonder what could be so important with that amount of time,")
-            print("and then it suddenly dawns on you: He is planning on attacking")
+            print("and then it suddenly dawns on you: They are planning on attacking")
             print("the concert! You hurry over to the concert, desperate to warn anyone")
             print("and everyone about the danger. Most just laugh, believing it was")
             print("just another person pulling a prank.")
