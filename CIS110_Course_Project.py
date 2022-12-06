@@ -98,7 +98,7 @@ while keepGoing.lower() == "yes":
                 favNum = favNum - 1
                 print("\nYou continue to hide behind the boxes, and the henchmen don't seem to notice you.")
                 print("You see an opporutinity to escape, though it still seems risky with the guards nearby.")
-                print("However, you now only have", favNum, "of minutes until", villainName, "attacks the concert.")
+                print("However, you now only have", favNum, "minutes until", villainName, "attacks the concert!")
                 if favNum <= 1:
                     break
                 else:
