@@ -90,16 +90,17 @@ while keepGoing.lower() == "yes":
             print("afraid of being caught. You see some of the henchman heading your way,")
             print("and you need to act fast!")
 
+            
             hideSeek = input("\nDo you try to hide? Enter yes or no:  ")
-            countDown = 0
+            countDown = favNum
             while hideSeek.lower() != "yes" and hideSeek.lower() != "no":
                 hideSeek = input("Invalid value. Please enter yes or no:  ")
             while hideSeek.lower() == "yes":
-                favNum = favNum - 1
+                countDown = countDown - 1
                 print("\nYou continue to hide behind the boxes, and the henchmen don't seem to notice you.")
                 print("You see an opporutinity to escape, though it still seems risky with the guards nearby.")
-                print("However, you now only have", favNum, "minutes until", villainName, "attacks the concert!")
-                if favNum <= 1:
+                print("However, you now only have", countDown, "minutes until", villainName, "attacks the concert!")
+                if countDown <= 2:
                     break
                 else:
                     hideSeek = input("\nDo you continue to hide? Enter yes or no:  ")
@@ -120,7 +121,6 @@ while keepGoing.lower() == "yes":
             print("\nYou arrive just in time for", lastBand + "'s performance. Everyone is having an amazing time.")
             print("There are many concession stands, surrounding the perimeter. There are many options available,")
             print("but you also don't want to miss out on listening to ", lastBand + ".")
-            watchBand = input("\nDo you go ahead and watch the band?")
             print("\nYou grab a can of", favSoda, "from one of the concession stands. It has been a while since you")
             print("have last had one, and you decide it is a good chance to get one to celebrate.")
 
