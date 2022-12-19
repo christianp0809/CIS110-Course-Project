@@ -106,14 +106,15 @@ while keepGoing.lower() == "yes":
             while hideSeek.lower() == "yes":
                 countDown = countDown - 1
                 countDown = str(countDown)
-                slowprint("\n\nYou continue to hide behind the boxes, and the henchmen don't seem to notice you.")
-                slowprint("\nYou see an opporutinity to escape, though it still seems risky with the guards nearby.")
+
+                slowprint("\nYou continue to hide behind the boxes, and the henchmen don't seem to notice you.")
+                slowprint("\nYou see an opportunity to escape, though it still seems risky with the guards nearby.")
                 slowprint("\nHowever, you now only have " + countDown + " minutes until " + villainName + " attacks the concert!")
                 countDown = int(countDown)
                 if countDown <= 2:
                     break
                 else:
-                    hideSeek = input("\nDo you continue to hide? Enter yes or no:  ")
+                    hideSeek = input("\n\nDo you continue to hide? Enter yes or no:  ")
                     while hideSeek.lower() != "yes" and hideSeek.lower() != "no":
                         hideSeek = input("Invalid value. Please enter yes or no:  ")
             
