@@ -31,26 +31,26 @@ while keepGoing.lower() == "yes":
             else:
                 villainName = input("Answer is too long. Please keep answer under 24 characters:  ")
         lastBand = input("\nWhat was the last band you listened to:  ")
-        while (len(lastBand) == 0) or (len(lastBand) >= 16):
+        while (len(lastBand) == 0) or (len(lastBand) >= 20):
             if (len(lastBand) == 0):
                 lastBand = input("Band cannot be blank. Please enter the last band you have listened to:  ")
             else:
-                lastBand = input("Answer is too long. Please keep answer under 16 characters:  ")
+                lastBand = input("Answer is too long. Please keep answer under 20 characters:  ")
         storeName = input("\nWhat is the closest store to you:  ")
-        while (len(storeName) == 0) or (len(storeName) >= 16):
+        while (len(storeName) == 0) or (len(storeName) >= 20):
             if (len(storeName) == 0):
                 storeName = input("Store cannot be blank. Please enter the closest store to you:  ")
             else:
-                storeName = input("Answer is too long. Please keep answer under 16 characters:  ")
+                storeName = input("Answer is too long. Please keep answer under 20 characters:  ")
         favNum = input("\nWhat is your favorite number:  ")
         while not favNum.isdigit():
             favNum = input("Value not recognized. Please enter a numeric value:  ")
         favSoda = input("\nWhat is your favorite soda:  ")
-        while (len(favSoda) == 0) or (len(favSoda) >= 16):
+        while (len(favSoda) == 0) or (len(favSoda) >= 20):
             if (len(favSoda) == 0):
                 favSoda = input("Soda cannot be blank. Please enter your favorite soda:  ")
             else:
-                favSoda = input("Answer is too long. Please keep answer under 16 characters:  ")
+                favSoda = input("Answer is too long. Please keep answer under 20 characters:  ")
         newValues = input("\nDo you like your answers? Type yes to continue, or no to change your answers:  ")
         while newValues.lower() != "yes" and newValues.lower() != "no":
             newValues = input("Invalid value. Please enter yes or no:  ")
@@ -118,7 +118,7 @@ while keepGoing.lower() == "yes":
                     while hideSeek.lower() != "yes" and hideSeek.lower() != "no":
                         hideSeek = input("Invalid value. Please enter yes or no:  ")
             
-            slowprint("\n\nYou decide you cannot wait any longer and make a break for the exit.")
+            slowprint("\nYou decide you cannot wait any longer and make a break for the exit.")
             slowprint("\nand the henchmen seem surprised to seeyou jump out from the crates. Before")
             slowprint("\nthey even have a chance to react, you are already out the door and half")
             slowprint("\nway down the block. You hurry over to the concert, desperate to warn anyone")
