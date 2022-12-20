@@ -4,7 +4,7 @@ import time
 def slowprint(string):
     for char in range(len(string)):
         print(string[char], end="")
-        time.sleep(1./1000)
+        time.sleep(1./100)
 
 slowprint("Hello! I have an exciting superhero story to share. I can't wait to tell it.")
 slowprint("\nBefore the story begins, I have a few questions I need you to answer.")
@@ -164,7 +164,7 @@ while keepGoing.lower() == "yes":
             slowprint("\nYou notice a can of " + favSoda + " near you, and you decide you would rather do")
             slowprint("\nsomething to help than to flee away. You pick up the can, and you throw it")
             slowprint("\nat " + villainName + ", who is clearly disrupted by it. You begin to freeze")
-            slowprint("\nas " + villainName + "turns his attention towards you, but you stand your")
+            slowprint("\nas " + villainName + " turns his attention towards you, but you stand your")
             slowprint("\nground anyways. Just as you fear it may be all over for you, " + heroName)
             slowprint("\ncomes from behind and takes out " + villainName + " once and for all.")
         else:
